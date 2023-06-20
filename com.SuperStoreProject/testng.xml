@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="executePageClasses.ExecuteClientPageClass"/>
+      <class name="executePageClasses.ExecuteDeductionPageClass"/>
+      <class name="executePageClasses.ExecuteWorkersPageClass"/>
+      <class name="executePageClasses.ExecuteDashBoardPageClass"/>
+      <class name="executePageClasses.ExecuteLoginPageClass"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
