@@ -36,9 +36,7 @@ public class LoginPageClass {
 	
 	
 	public String getUrl() {
-		
 		return gl.getCurrentUrl(driver);
-		
 	}
 	
 	public void login(String uname,String pword) {

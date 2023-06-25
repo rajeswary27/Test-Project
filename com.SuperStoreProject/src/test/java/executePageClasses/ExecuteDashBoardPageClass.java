@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import elementRepository.DashboardPageClass;
 import elementRepository.LoginPageClass;
+import retryAnalyzer.RetryAnalyzer;
 
 public class ExecuteDashBoardPageClass extends BaseClass{
 	
@@ -22,7 +23,7 @@ public class ExecuteDashBoardPageClass extends BaseClass{
 	
   }
   
-  @Test
+  @Test(groups = {"group1"},retryAnalyzer = RetryAnalyzer.class)
   public void verify_Welcome_Msg_Is_Displayed_Or_Not() {
 	  
 	  lp=new LoginPageClass(driver);
@@ -34,7 +35,7 @@ public class ExecuteDashBoardPageClass extends BaseClass{
 	  
 	  
   }
-  @Test
+  @Test(groups = {"group1"},retryAnalyzer = RetryAnalyzer.class)
   public void verify_Client_Tab_Is_Displayed_Or_Not() {
 	  
 	  lp=new LoginPageClass(driver);
@@ -45,7 +46,7 @@ public class ExecuteDashBoardPageClass extends BaseClass{
 	  
   }
   
-  @Test
+  @Test(groups = {"group1"},retryAnalyzer = RetryAnalyzer.class)
   public void verify_Workers_Tab_Is_Displayed_Or_Not() {
 	  
 	  lp=new LoginPageClass(driver);
@@ -56,7 +57,7 @@ public class ExecuteDashBoardPageClass extends BaseClass{
 	  
   }
   
-  @Test
+  @Test(groups = {"group2"},retryAnalyzer = RetryAnalyzer.class)
   public void verify_The_Logo_Is_Displayed_Or_Not() {
 	  
 	  lp=new LoginPageClass(driver);
@@ -67,7 +68,7 @@ public class ExecuteDashBoardPageClass extends BaseClass{
 	  
   }
   
-  @Test
+  @Test(groups = {"group2"},retryAnalyzer = RetryAnalyzer.class)
   public void verify_Deduction_Tab_Is_Displayed_Or_Not() {
 	  
 	  lp=new LoginPageClass(driver);

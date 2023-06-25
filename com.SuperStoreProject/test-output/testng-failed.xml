@@ -1,106 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="chromeTest(failed)">
-    <parameter name="browser" value="chrome"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="executePageClasses.ExecuteWorkersPageClass">
-        <methods>
-          <include name="verify_To_Delete_A_Worker"/>
-          <include name="afterMethod"/>
-          <include name="verify_To_Search_A_Worker"/>
-          <include name="beforeMethod"/>
-          <include name="verify_To_Create_New_Worker"/>
-        </methods>
-      </class> <!-- executePageClasses.ExecuteWorkersPageClass -->
-      <class name="executePageClasses.ExecuteDashBoardPageClass">
+      <class name="executePageClasses.ExecuteTimesheetPageClass">
         <methods>
           <include name="afterMethod"/>
-          <include name="verify_The_Logo_Is_Displayed_Or_Not"/>
-          <include name="f"/>
+          <include name="createReport"/>
           <include name="beforeMethod"/>
-          <include name="verify_Workers_Tab_Is_Displayed_Or_Not"/>
-          <include name="verify_Welcome_Msg_Is_Displayed_Or_Not"/>
-          <include name="verify_Client_Tab_Is_Displayed_Or_Not"/>
-          <include name="verify_Deduction_Tab_Is_Displayed_Or_Not"/>
+          <include name="VerifyToCreateANewTimesheet"/>
         </methods>
-      </class> <!-- executePageClasses.ExecuteDashBoardPageClass -->
-      <class name="executePageClasses.ExecuteLoginPageClass">
-        <methods>
-          <include name="verify_Successfull_Login"/>
-          <include name="afterMethod"/>
-          <include name="verify_UnSuccessful_Login"/>
-          <include name="verify_The_Correct_Page_Is_Open_While_Hitting_The_Url"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- executePageClasses.ExecuteLoginPageClass -->
-      <class name="executePageClasses.ExecuteDeductionPageClass">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="verify_To_Add_A_New_Deduction"/>
-          <include name="beforeMethod"/>
-          <include name="verify_The_Page_Deduction_Is_Open_While_Clicking_On_Deductions_Tab_Or_Not"/>
-        </methods>
-      </class> <!-- executePageClasses.ExecuteDeductionPageClass -->
-      <class name="executePageClasses.ExecuteClientPageClass">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="verify_Client_Search_Functionality"/>
-          <include name="verify_To_Create_New_Client"/>
-        </methods>
-      </class> <!-- executePageClasses.ExecuteClientPageClass -->
+      </class> <!-- executePageClasses.ExecuteTimesheetPageClass -->
     </classes>
-  </test> <!-- chromeTest(failed) -->
-  <test thread-count="5" name="edgeTest(failed)">
-    <parameter name="browser" value="edge"/>
-    <classes>
-      <class name="executePageClasses.ExecuteWorkersPageClass">
-        <methods>
-          <include name="verify_To_Delete_A_Worker"/>
-          <include name="afterMethod"/>
-          <include name="verify_To_Search_A_Worker"/>
-          <include name="beforeMethod"/>
-          <include name="verify_To_Create_New_Worker"/>
-        </methods>
-      </class> <!-- executePageClasses.ExecuteWorkersPageClass -->
-      <class name="executePageClasses.ExecuteDashBoardPageClass">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="verify_The_Logo_Is_Displayed_Or_Not"/>
-          <include name="f"/>
-          <include name="beforeMethod"/>
-          <include name="verify_Workers_Tab_Is_Displayed_Or_Not"/>
-          <include name="verify_Welcome_Msg_Is_Displayed_Or_Not"/>
-          <include name="verify_Client_Tab_Is_Displayed_Or_Not"/>
-          <include name="verify_Deduction_Tab_Is_Displayed_Or_Not"/>
-        </methods>
-      </class> <!-- executePageClasses.ExecuteDashBoardPageClass -->
-      <class name="executePageClasses.ExecuteLoginPageClass">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="verify_Successfull_Login"/>
-          <include name="verify_The_Correct_Page_Is_Open_While_Hitting_The_Url"/>
-          <include name="verify_UnSuccessful_Login"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- executePageClasses.ExecuteLoginPageClass -->
-      <class name="executePageClasses.ExecuteDeductionPageClass">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="verify_To_Add_A_New_Deduction"/>
-          <include name="beforeMethod"/>
-          <include name="verify_The_Page_Deduction_Is_Open_While_Clicking_On_Deductions_Tab_Or_Not"/>
-        </methods>
-      </class> <!-- executePageClasses.ExecuteDeductionPageClass -->
-      <class name="executePageClasses.ExecuteClientPageClass">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="verify_Client_Search_Functionality"/>
-          <include name="verify_To_Create_New_Client"/>
-        </methods>
-      </class> <!-- executePageClasses.ExecuteClientPageClass -->
-    </classes>
-  </test> <!-- edgeTest(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

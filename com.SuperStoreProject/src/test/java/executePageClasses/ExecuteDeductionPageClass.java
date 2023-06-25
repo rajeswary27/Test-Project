@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import elementRepository.DashboardPageClass;
 import elementRepository.DeductionPageClass;
 import elementRepository.LoginPageClass;
+import retryAnalyzer.RetryAnalyzer;
 
 public class ExecuteDeductionPageClass extends BaseClass{
 	
@@ -13,7 +14,7 @@ public class ExecuteDeductionPageClass extends BaseClass{
 	   DashboardPageClass dp;
 	   DeductionPageClass dd;
   
-	   @Test
+	   @Test(retryAnalyzer = RetryAnalyzer.class)
 	   public void verify_The_Page_Deduction_Is_Open_While_Clicking_On_Deductions_Tab_Or_Not() {
 		   
 		      lp=new LoginPageClass(driver);
@@ -27,7 +28,7 @@ public class ExecuteDeductionPageClass extends BaseClass{
 			  
 	   }
 	   
-	   @Test
+	   @Test(retryAnalyzer = RetryAnalyzer.class)
 	   public void verify_To_Add_A_New_Deduction() {
 		   
 		      lp=new LoginPageClass(driver);

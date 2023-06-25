@@ -96,6 +96,21 @@ public class GeneralUtilities {
 		action.sendKeys(element, Keys.ENTER).build().perform();
 	}
 	
+public void sendKeysUploadImage(WebElement element,String str) {
+		
+		element.sendKeys(str);
+	}
+	public void keyPressTab(WebDriver driver) {
+		
+		Actions action=new Actions(driver);
+		action.keyDown(Keys.TAB).build().perform();
+	}
+	
+	public void keyPressEnter(WebDriver driver) {
+		
+		Actions action=new Actions(driver);
+		action.keyDown(Keys.ENTER).build().perform();
+	}
 
 
 }

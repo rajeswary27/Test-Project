@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="executePageClasses.ExecuteWorkersPageClass">
+      <class name="executePageClasses.ExecuteTimesheetPageClass">
         <methods>
-          <include name="verify_To_Delete_A_Worker"/>
           <include name="afterMethod"/>
+          <include name="createReport"/>
           <include name="beforeMethod"/>
+          <include name="VerifyToCreateANewTimesheet"/>
         </methods>
-      </class> <!-- executePageClasses.ExecuteWorkersPageClass -->
+      </class> <!-- executePageClasses.ExecuteTimesheetPageClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

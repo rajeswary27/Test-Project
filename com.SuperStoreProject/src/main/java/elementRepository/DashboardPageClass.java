@@ -8,89 +8,89 @@ import org.openqa.selenium.support.PageFactory;
 import utility.GeneralUtilities;
 
 public class DashboardPageClass {
-	
+
 	WebDriver driver;
-	
-	GeneralUtilities gl=new GeneralUtilities();
-	
+
+	GeneralUtilities gl = new GeneralUtilities();
+
 	public DashboardPageClass(WebDriver driver) {
-		this.driver=driver;
-		PageFactory.initElements(driver,this);
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
-	
-	@FindBy(xpath="//a[text()='Dashboard']")
+
+	@FindBy(xpath = "//a[text()='Dashboard']")
 	WebElement dashboard;
-	
-	@FindBy(xpath="//a[text()='Company']")
+
+	@FindBy(xpath = "//a[text()='Company']")
 	WebElement company;
-	
-	@FindBy(xpath="//a[text()='Clients']")
+
+	@FindBy(xpath = "//a[text()='Clients']")
 	WebElement clients;
-	
-	@FindBy(xpath="//a[@href='/payrollapp/worker/index']")
+
+	@FindBy(xpath = "//a[@href='/payrollapp/worker/index']")
 	WebElement workers;
-	
-	@FindBy(xpath="//a[text()='Deduction']")
+
+	@FindBy(xpath = "//a[text()='Deduction']")
 	WebElement deduction;
-	
-	@FindBy(xpath="//a[text()='TimeSheet']")
+
+	@FindBy(xpath = "//a[text()='TimeSheet']")
 	WebElement timeSheet;
-	
-	@FindBy(xpath="//a[text()='Payslip']")
+
+	@FindBy(xpath = "//a[text()='Payslip']")
 	WebElement paySlip;
-	
-	@FindBy(xpath="//a[text()='Invoice']")
+
+	@FindBy(xpath = "//a[text()='Invoice']")
 	WebElement inVoice;
-	
-	@FindBy(xpath="//a[text()='Report']")
+
+	@FindBy(xpath = "//a[text()='Report']")
 	WebElement report;
-	
-	@FindBy(xpath="//a[@href='/payrollapp/user']")
+
+	@FindBy(xpath = "//a[@href='/payrollapp/user']")
 	WebElement settings;
-	
-	@FindBy(xpath="//p[contains(text(),'Welcome')]")
+
+	@FindBy(xpath = "//p[contains(text(),'Welcome')]")
 	WebElement dashboardDisplyMsg;
-	
-	@FindBy(xpath="//img[@src='/payrollapp/images/logo.png']")
+
+	@FindBy(xpath = "//img[@src='/payrollapp/images/logo.png']")
 	WebElement logo;
-	
-	
-	
+
 	public Boolean isdashboardDisplyMsgDisplayed() {
 		return gl.isDisplayedMethod(dashboardDisplyMsg);
-		
+
 	}
-	
+
 	public void clickOnClientTab() {
 		gl.clickElement(clients);
-		
+
 	}
-	
+
 	public boolean isClientTabDisplayed() {
-		return gl.isDisplayedMethod(logo);
+		return gl.isDisplayedMethod(clients);
 	}
-	
+
 	public void clickOnWorkersTab() {
-		gl.javascriptClick(driver, workers );
+		gl.javascriptClick(driver, workers);
 	}
-	
+
 	public boolean isWorkersTabDisplayed() {
-		return gl.isDisplayedMethod(logo);
+		return gl.isDisplayedMethod(workers);
 	}
+
 	public boolean isLogoDisplayed() {
 		return gl.isDisplayedMethod(logo);
 	}
-	
+
 	public void clickOnDeductionTab() {
 		gl.javascriptClick(driver, deduction);
 	}
-	
+
 	public boolean isDeductionTabDisplayed() {
-		return gl.isDisplayedMethod(logo);
+		return gl.isDisplayedMethod(deduction);
 	}
-	
-	
-	
-	
+
+	public void clickOnTimeSheetTab() {
+
+		gl.clickElement(timeSheet);
+	}
 
 }
